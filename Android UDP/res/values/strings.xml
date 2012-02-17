@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, AndroidUDPActivity!</string>
     <string name="app_name">Android UDP</string>
+    <string name="sendLabel">Send Packet</string>
 
 </resources>
