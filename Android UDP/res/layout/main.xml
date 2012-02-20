@@ -2,32 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="10sp">
 
     <EditText
         android:id="@+id/hostname"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:hint="@string/ip_address_or_hostname" >
 
         <requestFocus />
     </EditText>
 
-    <EditText
-        android:id="@+id/port"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number" />
-
-    <Button
-        android:id="@+id/sendPacketButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sendLabel" />
-
-    <TextView
-        android:id="@+id/output"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp">
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/port_number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/sendPacketButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sendLabel" />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingBottom="10sp"
+        android:id="@+id/output"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:textColor="@android:color/darker_gray"
+        android:typeface="monospace"
+        android:padding="5sp"
+        android:text="" />
 
 </LinearLayout>
