@@ -4,5 +4,7 @@
     <string name="hello">Hello World, AndroidUDPActivity!</string>
     <string name="app_name">Android UDP</string>
     <string name="sendLabel">Send Packet</string>
+    <string name="ip_address_or_hostname">IP address or hostname</string>
+    <string name="port_number">Port number</string>
 
 </resources>
